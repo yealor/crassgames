@@ -1,0 +1,237 @@
+//-----------  Start 01 Home Electronics -----------//
+.banner-area {
+	.height {
+		height: 550px;
+	}
+	&.middle {
+		.height {
+			height: 440px;
+		}
+	}
+	&.electronic-banner-area {
+		@extend .p1-gradient-bg;
+	}
+	&.jewellery-banner-area {
+		@extend .p4-gradient-bg;
+	}
+	&.organic-banner-area {
+		@extend .p2-gradient-bg;
+		&.middle {
+			background-image: -moz-linear-gradient( 0deg, rgb(160,208,94) 0%, rgb(65,177,83) 100%);
+			background-image: -webkit-linear-gradient( 0deg, rgb(160,208,94) 0%, rgb(65,177,83) 100%);
+			background-image: -ms-linear-gradient( 0deg, rgb(160,208,94) 0%, rgb(65,177,83) 100%);
+			.owl-controls .owl-nav .owl-next {
+				&:hover {
+					background-image: -moz-linear-gradient( 0deg, rgb(160,208,94) 0%, rgb(65,177,83) 100%);
+					background-image: -webkit-linear-gradient( 0deg, rgb(160,208,94) 0%, rgb(65,177,83) 100%);
+					background-image: -ms-linear-gradient( 0deg, rgb(160,208,94) 0%, rgb(65,177,83) 100%);
+				}
+			}
+			.owl-controls .owl-nav .owl-prev {
+				&:hover {
+					background-image: -moz-linear-gradient( 0deg, rgb(160,208,94) 0%, rgb(65,177,83) 100%);
+					background-image: -webkit-linear-gradient( 0deg, rgb(160,208,94) 0%, rgb(65,177,83) 100%);
+					background-image: -ms-linear-gradient( 0deg, rgb(160,208,94) 0%, rgb(65,177,83) 100%);
+				}
+			}
+		}
+	}
+}
+
+.banner-slider {
+	position: relative;
+	.left-content {
+		.bottom {
+			.price {
+				color: $white;
+				font-weight: 700;
+				font-size: 24px;
+				margin-right: 20px;
+				span {
+					font-weight: 700;
+				}
+			}
+		}
+		h1 {
+			@include media-breakpoint-down (sm) {
+				br {
+					display: none;
+				}
+				font-size: 24px;
+			}
+		}
+	}
+	.owl-item img {
+		width: auto !important;
+		@include media-breakpoint-down (sm) {
+			height: 200px;
+		}
+	}
+	position: relative;
+	.owl-controls {
+		position: absolute;
+		top: 50%;
+		margin-top: -25px;
+		width: 100%;
+		@include media-breakpoint-down(lg) {
+			display: none;
+		}
+		.owl-nav {
+			.owl-prev {
+				position: absolute;
+				// right: -200px;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				-moz-background-clip: padding;
+				-webkit-background-clip: padding-box;
+				background-clip: padding-box;
+				background: $white;
+				box-shadow: 2.828px 2.828px 15px 0px rgba(0, 0, 0, 0.1);
+				text-align: center;
+				@include large-screen {
+					right: -200px !important;
+				}
+				@include media-breakpoint-up(xl) {
+					right: -55px;
+				}
+				span {
+					color: $title-color;
+					line-height: 50px;
+					font-size: 24px;
+					position: relative;
+					z-index: 3;
+				}
+				&:after {
+					content: "";
+					position: absolute;
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+					-moz-background-clip: padding;
+					-webkit-background-clip: padding-box;
+					background-clip: padding-box;
+					top: 0;
+					left: 0;
+					opacity: 0;
+					z-index: 2;
+					@include transition (all .3s ease);
+				}
+				&:hover {
+					&:after {
+						opacity: 1;
+					}
+					span {
+						color: $white;
+					}
+				}
+				
+			}
+			.owl-next {
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				-moz-background-clip: padding;
+				-webkit-background-clip: padding-box;
+				background-clip: padding-box;
+				background: $white;
+				box-shadow: 2.828px 2.828px 15px 0px rgba(0, 0, 0, 0.1);
+				text-align: center;
+				@include large-screen {
+					left: -200px !important;
+				}
+				@include media-breakpoint-up(xl) {
+					left: -55px;
+				}
+				span {
+					color: $title-color;
+					line-height: 50px;
+					font-size: 24px;
+					position: relative;
+					z-index: 3;
+				}
+				&:after {
+					content: "";
+					position: absolute;
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+					-moz-background-clip: padding;
+					-webkit-background-clip: padding-box;
+					background-clip: padding-box;
+					top: 0;
+					left: 0;
+					opacity: 0;
+					z-index: 2;
+					@include transition (all .3s ease);
+				}
+				&:hover {
+					&:after {
+						opacity: 1;
+					}
+					span {
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+	&.electronic-banner-slider {
+		.owl-controls {
+			.owl-nav {
+				.owl-prev {
+					&:after {
+						@extend .p1-gradient-bg;
+					}
+				}
+				.owl-next {
+					&:after {
+						@extend .p1-gradient-bg;
+					}
+				}
+			}
+		}
+	}
+	&.organic-banner-slider {
+		.owl-controls {
+			.owl-nav {
+				.owl-prev {
+					&:after {
+						@extend .p2-gradient-bg;
+					}
+				}
+				.owl-next {
+					&:after {
+						@extend .p2-gradient-bg;
+					}
+				}
+			}
+		}
+	}
+	&.jewellery-banner-slider {
+		.left-content {
+			@include media-breakpoint-down (sm) {
+				padding: 5px;
+			}
+		}
+		.owl-controls {
+			.owl-nav {
+				.owl-prev {
+					&:after {
+						@extend .p4-gradient-bg;
+					}
+				}
+				.owl-next {
+					&:after {
+						@extend .p4-gradient-bg;
+					}
+				}
+			}
+		}
+	}
+}
+
+.blog-banner-area {
+	background: #f9fafc;
+}

@@ -1,0 +1,17 @@
+.brand-area {
+	padding:50px 0 100px 0;
+}
+.total-brand {
+	margin-top: 20px;
+	.single-brand {
+		width: 16.667%;
+		text-align: center;
+		margin: 10px 0;
+		@include media-breakpoint-down (md) {
+			width: 25%;
+		}
+		@include media-breakpoint-down (sm) {
+			width: 50%;
+		}
+	}
+}

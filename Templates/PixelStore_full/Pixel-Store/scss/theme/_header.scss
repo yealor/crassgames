@@ -1,0 +1,1114 @@
+//-----------  Start 01 Home Electronics -----------//
+.header-top-area {
+	border-bottom: 1px solid #f7f7f7;
+	padding: 10px 0;
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
+}
+.sticky-header {
+	background: $white;
+}
+.sticky-nav {
+	display: none;
+}
+.header-middle {
+	padding: 20px 0;
+}
+.header-bottom {
+	@include transition (all 3s ease);
+	.free-text {
+		@include media-breakpoint-down(lg) {
+			display: none;
+		}
+	}
+}
+.main-logo {
+	@include media-breakpoint-down (sm) {
+		height: 30px;
+	}
+}
+.header-electronics {
+	.shortcut-icon {
+		@include media-breakpoint-down(md) {
+			margin-right: 50px;
+		}
+	}
+	.header-middle {
+		padding: 30px 0 20px 0;
+		@include media-breakpoint-down (md) {
+			padding: 20px 0;
+		}
+	}
+	.is-sticky {
+		.sticky-header {
+			z-index: 9999;
+			box-shadow: 0.707px 0.707px 15px 0px rgba(0, 0, 0, 0.07);
+		}
+		// .search-bar {
+		// 	display: none !important;
+		// }
+		// .sticky-nav {
+		// 	display: block;
+		// }
+		.header-bottom {
+			display: none;
+			// @include media-breakpoint-down(sm) {
+			// 	@include flexbox();
+			// }
+		}
+	}
+	.mobile-btn {
+		display: none;
+		span {
+			font-size: 30px;
+		}
+	}
+	@include media-breakpoint-down (sm) {
+		.mobile-btn {
+			display: block;
+		}
+		.main-menu {
+			position: absolute;
+			-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;
+			background: $white;
+			padding: 15px 0;
+			top: 37px;
+			right: 0px;
+			display: none;
+			z-index: 9;
+			min-width: 200px;
+			li {
+				a {
+					width: 100%;
+					text-align: center;
+				}
+			}
+		}
+		.mibile-menu {
+			display: block;
+		}
+	}
+}
+
+.catagory-wrap {
+	position: relative;
+	.all-slick {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 999;
+		.main-ul {
+			display: none;
+		}
+	}
+}
+
+.slicknav_nav .slicknav_arrow{
+	font-size: 1em;
+}
+
+.slicknav_menu {
+	position: fixed;
+	top: 30px;
+	right: 15px;
+	z-index: 99999;
+	display: none;
+	background: transparent;
+	@include media-breakpoint-down (md) {
+		display: block;
+	}
+	@include media-breakpoint-down (sm) {
+		top: 20px;
+	}
+}
+.slicknav_menu  {
+	padding: 0;
+	.slicknav_menutxt {
+		display: none;
+	}
+	.slicknav_icon {
+		margin: 0;
+	}
+	.slicknav_btn {
+		margin: 0;
+		text-shadow: none;
+	}
+	.slicknav_nav {
+		background: $white;
+		max-height: 450px;
+		overflow-y: scroll;
+		margin-top: 40px;
+		.main-ul {
+			padding: 15px 0 30px 0;
+		}
+		ul {
+			margin: 0 15px;
+		}
+		a {
+			color: $title-color;
+			&:focus {
+				color: $title-color;
+			}
+			&:hover {
+				border-radius: 0px;
+				background: rgba($white, .5);
+				color: $title-color;
+			}
+		}
+	}
+}
+
+@media(max-width: 736px) and (min-width:412px){
+	.slicknav_menu{
+			right: 16%;
+	}
+}
+@media(max-width:414px){
+	.slicknav_menu{
+		right:4%;
+	}
+}
+
+@media(max-width:480px)and(min-width:320px){
+	.slicknav_menu{
+		right:4%;
+	}
+}
+
+.electronics-body {
+	.slicknav_menu {
+		.slicknav_btn {
+			@extend .p1-gradient-bg;
+		}
+	}
+}
+.organic-body {
+	.slicknav_menu {
+		.slicknav_btn {
+			@extend .p2-gradient-bg;
+		}
+	}
+}
+.furniture-body {
+	.slicknav_menu {
+		.slicknav_btn {
+			@extend .p3-gradient-bg;
+		}
+	}
+}
+.jewellery-body {
+	.slicknav_menu {
+		.slicknav_btn {
+			@extend .p4-gradient-bg;
+		}
+	}
+}
+
+
+
+.header-organic-food {
+	.sticky-shortcut {
+		display: none !important;
+		@include media-breakpoint-down (md) {
+			display: -webkit-box !important;display: -ms-flexbox !important;display: flex !important;
+			margin-right: 50px;
+		}
+	}
+	.is-sticky {
+		.sticky-header {
+			z-index: 99;
+			box-shadow: 0.707px 0.707px 15px 0px rgba(0, 0, 0, 0.07);
+		}
+		.sticky-nav {
+			display: block;
+		}
+		.header-bottom {
+			display: none;
+		}
+		.free-shiping {
+			display: none;
+		}
+		.sticky-shortcut {
+			display: -webkit-box !important;display: -ms-flexbox !important;display: flex !important;
+		}
+	}
+}
+.jewellery-body {
+	.slicknav_menu {
+		top: 5px;
+	}
+}
+.furniture-body {
+	.slicknav_menu {
+		top: 60px;
+	}
+	.shortcut-icon {
+		@include media-breakpoint-down (sm) {
+			margin-right: 60px;
+		}
+	}
+}
+.header-jewellery {
+	background: $white;
+	position: relative;
+	z-index: 999;
+	.header-middle {
+		padding: 15px 0;
+		@include media-breakpoint-down (md) {
+			padding: 5px 0;
+		}
+	}
+	.sticky-nav {
+		display: none;
+	}
+	.sticky-logo {
+		display: none;
+	}
+	.sticky-shortcut {
+		display: none !important;
+	}
+	.is-sticky {
+		.sticky-header {
+			box-shadow: 0.707px 0.707px 15px 0px rgba(0, 0, 0, 0.07);
+		}
+		.sticky-logo {
+			display: block;
+			@include media-breakpoint-down(sm) {
+				width: 100px;
+			}
+		}
+		.main-logo-a {
+			display: none;
+		}
+		.sticky-shortcut {
+			display: flex !important;
+			margin-top: 10px;
+			@include media-breakpoint-down (md) {
+				margin-right: 50px;
+			}
+		}
+		.header-bottom {
+			display: none;
+		}
+		.header-middle {
+			justify-content: space-between !important;
+		}
+	}
+}
+
+.single-top-element {
+	&.ml-50 {
+		@include media-breakpoint-down(md) {
+			margin-left: 10px;
+		}
+	}
+	span {
+		@extend .p1-gradient-color;
+		margin-right: 10px;
+	}
+	a {
+		color: $title-color;
+	}
+}
+.search-bar {
+	@include media-breakpoint-down(sm) {
+		margin-top: 10px;
+		width: 100%;
+	}
+	.search-input {
+		-webkit-box-flex: 3;
+		-ms-flex: 3 0px;
+		flex: 3 0px;
+		border: 1px solid #eeeeee;
+		border-right: 0px;
+		border-radius: 20px 0 0 20px;
+		padding: 0 25px;
+		@include media-breakpoint-down(sm) {
+			padding: 0 15px;
+		}
+		display: inline-block;
+		&:focus {
+			outline: none;
+			border: 1px solid #f75d71;
+			border-right: 0px;
+			+ .dropdown .search-dropdown {
+				border: 1px solid #f75d71;
+				border-left: 0px;
+				border-right: 0px;
+			}
+		}
+	}
+	.search-dropdown {
+		line-height: 40px;
+		display: inline-block;
+		padding: 0 25px;
+		@include media-breakpoint-down(md) {
+			padding: 0 10px;
+		}
+		@include media-breakpoint-down(xs) {
+			display: none !important;
+		}
+		border: 1px solid #eeeeee;
+		border-left: 0px;
+		border-right: 0px;
+		@include transition (all 0s);
+		span {
+			margin-left: 10px;
+		}
+	}
+	.search-submit {
+		border: none;
+		@extend .p1-gradient-bg;
+		padding: 0 15px;
+		line-height: 40px;
+		border-radius: 0 20px 20px 0;
+		color: $white;
+		cursor: pointer;
+
+	}
+}
+.shortcut-icon {
+	.single-shortcut {
+		cursor: pointer;
+		span {
+			color: $title-color;
+		}
+		margin: 0 15px;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	.top-cart {
+		position: relative;
+		.cart-count {
+			position: absolute;
+			top: -15px;
+			left: -15px;
+			display: inline-block;
+			line-height: 25px;
+			width: 25px;
+			text-align: center;
+			@extend .p1-gradient-bg;
+			color: $white;
+			border-radius: 50%;
+			font-size: 12px;
+		}
+	}
+	.top-cart-2a {
+		position: relative;
+		.cart-count {
+			position: absolute;
+			top: -9px;
+			left: -20px;
+			display: inline-block;
+			line-height: 25px;
+			width: 25px;
+			text-align: center;
+			@extend .p4-gradient-bg;
+			color: $white !important;
+			border-radius: 50%;
+			font-size: 12px;
+		}
+	}
+}
+.department-list-btn {
+	display: inline-block;
+	background: $white;
+	line-height: 40px;
+	box-shadow: 2.828px 2.828px 15px 0px rgba(0, 0, 0, 0.1);
+	padding: 0 40px;
+	width: 100%;
+	span {
+		margin-right: 10px;
+	}
+}
+.main-menu {
+	@include flexbox();
+	li {
+		a {
+			display: inline-block;
+			line-height: 40px;
+			padding: 0 30px;
+			@include media-breakpoint-down(md) {
+				padding: 0 20px;
+			}
+			span {
+				background: -webkit-linear-gradient(-180deg, #333333, #333333);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+			&:hover {
+				box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);
+				border-radius: 3px 3px 0 0;
+				background: $white;
+			}
+		}
+	}
+	.sub-menu {
+		padding: 20px 0;
+		position: absolute;
+		box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);
+		top: 40px;
+		left: 0;
+		z-index: 3;
+		background: $white;
+		min-width: 250px;
+		transform: scaleY(0);
+		@include transition();
+		transform-origin: top;
+		li {
+			a {
+				width: 100%;
+				box-shadow: none;
+				border-radius: 0px;
+			}
+		}
+	}
+	.drop-menu {
+		position: relative;
+		&:hover {
+			.sub-menu {
+				transform: scaleY(1);
+			}
+		}
+		
+	}
+}
+.header-electronics {
+	.main-menu li a {
+		&:hover {
+			span {
+				@extend .p1-gradient-color;
+			}
+		}
+	}
+}
+.custom-categories-dropdown {
+	position: relative;
+	.dropdown-menu {
+		position: absolute;
+		top: 100%;
+		left: -60px !important;
+		z-index: 1000;
+		display: none;
+		float: left;
+		min-width: 220px;
+		padding: 15px 30px;
+		margin: 0;
+		font-size: 14px;
+		line-height: 25px;
+		color: $text-color;
+		text-align: right;
+		list-style: none;
+		background-color: #fff;
+		background-clip: padding-box;
+		border: 0px;
+		border-radius: 0 0 3px 3px;
+		box-shadow: 2.828px 2.828px 15px 0px rgba(0, 0, 0, 0.1);
+	}
+	.dropdown-item {
+		padding: 0;
+		color: #777777;
+		&:hover {
+			color: $title-color;
+			background: $white;
+		}
+	}
+}
+
+
+// Drop Down Menu CSS
+.md-down-none {
+	@include media-breakpoint-down (md) {
+		display: none !important;
+	}
+}
+.sm-down-none {
+	@include media-breakpoint-down (md) {
+		display: none !important;
+	}
+}
+.custom-department-dropdown {
+	background: $white;
+	.dropdown-menu {
+		float: left;
+		min-width: 280px;
+		font-size: 14px;
+		padding: 15px 0 15px 0;
+		margin: 0;
+		text-align: left;
+		list-style: none;
+		background-color: #fff;
+		background-clip: padding-box;
+		border: 0px;
+		border-radius: 0 0 3px 3px;
+		box-shadow: 2.828px 2.828px 15px 0px rgba(0, 0, 0, 0.1);
+	}
+	.dropdown-item {
+		display: block;
+		width: 100%;
+		padding: 0 30px 0 30px;
+		clear: both;
+		font-weight: normal;
+		color: $text-color;
+		text-align: inherit;
+		white-space: nowrap;
+		background: none;
+		font-size: 14px;
+		line-height: 42px;
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			height: 1px;
+			width: 93%;
+			background: #eee;
+			bottom: -1px;
+			left: 0;
+		}
+		&.last-item:after {
+			background: $white;
+		}
+		@include flexbox();
+		@include justify-content(space-between);
+		@include align-items(center);
+		
+		@include transition (all 0s);
+		&:hover {
+			span {
+				@extend .p1-gradient-color;
+			}
+		}
+	}
+}
+
+.side-menu-desc {
+	min-width: 560px;
+	height: 100%;
+	background: #ecf0f3 url(../img/electronics/menu-bg.png) no-repeat center bottom;
+	padding: 45px;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	transform: scaleX(0);
+	transform-origin: left 5px -3px;
+	overflow: hidden;
+	@include transition (all .2s ease);
+	&:hover {
+		transform: scaleX(1);
+	}
+	.head {
+		font-size: 16px;
+		@extend .p1-gradient-color;
+		font-weight: 400;
+		padding-bottom: 5px;
+	}
+	ul {
+		li {
+			margin-top: 6px;
+			a {
+				&:hover {
+					color: #f6497c;
+				}
+			}
+		}
+	}
+	.left {
+		
+		ul {
+			border-bottom: 1px solid #cccccc;
+			padding-bottom: 20px;
+			padding-right: 30px;
+		}
+		.bottom-list {
+			border-bottom: 0px;
+		}
+	}
+	.right {
+		padding-left: 50px;
+	}
+	.comnpany-name {
+		margin-top: 10px;
+		p {
+			margin: 0;
+		}
+		span {
+			color: #cccccc;
+		}
+	}
+	.product-img {
+		position: absolute;
+		bottom: 30px;
+		right: 30px;
+	}
+	&.movies {
+		.product-img {
+			right: 50px;
+			bottom: 70px;
+		}
+		.top-list {
+			padding-bottom: 10px;
+			margin-bottom: 10px;
+		}
+	}
+	&.tv-audio {
+		.product-img {
+			right: 30px;
+			bottom: 90px;
+		}
+	}
+	&.watches {
+		.product-img {
+			right: 30px;
+			bottom: 90px;
+		}
+	}
+	&.car {
+		.product-img {
+			right: 0px;
+			bottom: 50px;
+		}
+	}
+	&.accessories {
+		.product-img {
+			right: 0px;
+			bottom: 0px;
+		}
+	}
+}
+.computer-item {
+	&:hover {
+		~ .computer {
+			transform: scaleX(1);
+		}
+	}
+}
+.camera-item {
+	&:hover {
+		~ .camera {
+			transform: scaleX(1);
+		}
+	}
+}
+.mobile-item {
+	&:hover {
+		~ .mobile {
+			transform: scaleX(1);
+		}
+	}
+}
+.movies-item {
+	&:hover {
+		~ .movies {
+			transform: scaleX(1);
+		}
+	}
+}
+.tv-audio-item {
+	&:hover {
+		~ .tv-audio {
+			transform: scaleX(1);
+		}
+	}
+}
+.watches-item {
+	&:hover {
+		~ .watches {
+			transform: scaleX(1);
+		}
+	}
+}
+.car-item {
+	&:hover {
+		~ .car {
+			transform: scaleX(1);
+		}
+	}
+}
+.accessories-item {
+	&:hover {
+		~ .accessories {
+			transform: scaleX(1);
+		}
+	}
+}
+
+
+//-----------  End 01 Home Electronics -----------//
+
+//-----------  Start 02 Home Organic Food -----------//
+.header-organic-food {
+	.search-bar {
+		.search-input {
+			&:focus {
+				outline: none;
+				border: 1px solid #41b153;
+				border-right: 0px;
+				+ .dropdown .search-dropdown {
+					border: 1px solid #41b153;
+					border-left: 0px;
+					border-right: 0px;
+				}
+			}
+		}
+		.search-submit {
+			@extend .p2-gradient-bg;
+		}
+	}
+	.main-menu {
+		li {
+			a {
+				&:hover {
+					span {
+						@extend .p2-gradient-color;
+					}
+				}
+			}
+		}
+	}
+	.shortcut-icon .top-cart .cart-count {
+		@extend .p2-gradient-bg;
+	}
+}
+//-----------  End 02 Home Organic Food  -----------//
+
+//-----------  Start 03 Home Furniture  -----------//
+.header-furniture {
+	background: $white;
+	.search-bar {
+		margin-top: 0;
+	}
+	.search-bar .search-dropdown {
+		padding: 0 5px;
+		font-size: 12px;
+		width: 110px;
+		display: block !important;
+	}
+	.is-sticky {
+		.sticky-header {
+			z-index: 999;
+			box-shadow: 0.707px 0.707px 15px 0px rgba(0, 0, 0, 0.07);
+		}
+		.furniture-header-top {
+			//display: none;
+		}
+	}
+}
+.furniture-bottom-header {
+	padding: 20px 0;
+	.main-menu li a {
+		padding: 0 20px;
+		&:hover {
+			box-shadow: none;
+			span {
+				@extend .p3-gradient-color;
+			}
+		}
+	}
+	.shortcut-icon .top-cart .cart-count {
+		@extend .p3-gradient-bg;
+	}
+}
+.furniture-header-top {
+	position: relative;
+	&:before {
+		position: absolute;
+		content: "";
+		left: 0;
+		top: 0;
+		height: 40px;
+		width: 50%;
+		@extend .p3-gradient-bg;
+	}
+	&:after {
+		position: absolute;
+		content: "";
+		right: 0;
+		top: 0;
+		height: 40px;
+		width: 50%;
+		background: #f9fafc;
+	}
+	.furniture-header-top-content {
+		position: relative;
+		z-index: 33;
+		@include media-breakpoint-down(xs) {
+			padding: 0;
+			.search-submit {
+				padding: 0 10px;
+			}
+		}
+		.search-bar .search-input {
+			border: 0px;
+			border-radius: 0px;
+			background: #f9fafc;
+			&:focus {
+				border: 0px;
+				+ .dropdown .search-dropdown {
+					border: 0px;
+				}
+			}
+		}
+		.search-bar .search-dropdown {
+			border: 0px;
+		}
+		.search-bar .search-submit {
+			border-radius: 0px;
+			@extend .p3-gradient-bg;
+		}
+	}
+}
+//-----------  End 03 Home Furniture  -----------//
+
+//-----------  Start 04 Home Jewellery  -----------//
+.jewellery-header-top {
+	background: #f9fafc;
+	border-bottom: 0px;
+	.search-bar {
+		border-left: 1px solid #cccccc;
+		@include media-breakpoint-down (sm) {
+			margin-top: 0;
+			border-left: 0px;
+		}
+		&.ml-auto {
+			@include media-breakpoint-down(sm) {
+				margin-left: 0 !important;
+			}
+		}
+	}
+	@include media-breakpoint-down (sm) {
+		.search-bar {
+			width: 55%;
+		}
+	}
+	.search-bar .search-input {
+		border: 0px;
+		border-radius: 0px;
+		background: #f9fafc;
+		width: 200px;
+		@include media-breakpoint-down (sm) {
+			width: 100%;
+			-webkit-box-flex: 0;
+			-ms-flex: 0 0px;
+			flex: none;
+			padding-left: 0px;
+		}
+		&:focus {
+			border: 0px;
+			+ .dropdown .search-dropdown {
+				border: 0px;
+			}
+		}
+	}
+	.search-bar .search-dropdown {
+		border: 0px;
+		min-width: 159px;
+	}
+	.search-bar .search-submit {
+		border-radius: 0px;
+		background: $white;
+		color: $title-color;
+		&:hover {
+			color: $white;
+			@extend .p4-gradient-bg;
+		}
+	}
+	.custom-categories-dropdown .dropdown-item:hover {
+		color: #6a12c9;
+		background: #fff;
+	}
+	.single-top-element {
+		span {
+			@extend .p4-gradient-color;
+			margin-right: 10px;
+			&.current {
+				background: -webkit-linear-gradient(-180deg, #333333, #333333);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+		a {
+			color: $title-color;
+		}
+	}
+	.nice-select {
+		-webkit-tap-highlight-color: transparent;
+		background-color: transparent;
+		border-radius: 0px;
+		border: 0px;
+		height: 40px;
+		line-height: 40px;
+		outline: none;
+		padding-left: 3px;
+		padding-right: 20px;
+	}
+	.nice-select::after {
+		margin-top: -2px;
+	}
+	.shortcut-icon {
+		.single-shortcut {
+			cursor: pointer;
+			span {
+				color: $title-color;
+			}
+			margin: 0 15px;
+			&:first-child {
+				margin-left: 0;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+			@include media-breakpoint-down (md) {
+				margin-right: 50px !important;
+			}
+			@include media-breakpoint-down (sm) {
+				margin-right: 0 !important;
+			}
+			@include media-breakpoint-down (xs) {
+				margin-right: 50px !important;
+			}
+		}
+		.top-cart {
+			position: relative;
+			.cart-count {
+				position: absolute;
+				top: -5px;
+				left: -20px;
+				display: inline-block;
+				line-height: 25px;
+				width: 25px;
+				text-align: center;
+				@extend .p4-gradient-bg;
+				color: $white;
+				border-radius: 50%;
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+.header-jewellery {
+	position: relative;
+	z-index: 999;
+	.header-bottom {
+		position: relative;
+		&:after {
+			position: absolute;
+			content: "";
+			width: 5000px;
+			height: 1px;
+			background: #eee;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	.header-middle {
+		.shortcut-icon {
+			.single-shortcut {
+				cursor: pointer;
+				span {
+					color: $title-color;
+				}
+				margin: 0 15px;
+				&:first-child {
+					margin-left: 0;
+				}
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+			.top-cart {
+				position: relative;
+				.cart-count {
+					position: absolute;
+					top: -15px;
+					left: -15px;
+					display: inline-block;
+					line-height: 25px;
+					width: 25px;
+					text-align: center;
+					@extend .p4-gradient-bg;
+					color: $white;
+					border-radius: 50%;
+					font-size: 12px;
+				}
+			}
+			// .top-cart-2a {
+			// 	position: relative;
+			// 	.cart-count {
+			// 		position: absolute;
+			// 		top: -15px;
+			// 		left: -15px;
+			// 		display: inline-block;
+			// 		line-height: 25px;
+			// 		width: 25px;
+			// 		text-align: center;
+			// 		@extend .p4-gradient-bg;
+			// 		color: $white;
+			// 		border-radius: 50%;
+			// 		font-size: 12px;
+			// 	}
+			// }
+		}
+	}
+	.main-menu {
+		li {
+			border-left:1px solid #eee;
+			&:last-child{
+				border-right:1px solid #eee;
+			}			
+			a {
+				display: inline-block;
+				line-height: 40px;
+				padding: 0 30px;
+				position: relative;
+				border-radius: 0 3px 3px 0;
+				&:after {
+					position: absolute;
+					content: "";
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					@extend .p4-gradient-bg;
+					z-index: 1;
+					opacity: 0;
+					@include transition();
+				}
+				span {
+					position: relative;
+					z-index: 3;
+				}
+				&:hover {
+					&:after {
+						opacity: 1;
+					}
+					background: $white;
+					span {
+						background: -webkit-linear-gradient(-180deg, #fff, #fff);
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+					}
+				}
+			}
+			.sub-menu {
+				li {
+					a {
+						box-shadow: none;
+						border-radius: 0px;
+					}
+				}
+			}
+		}
+	}
+}
+
+//-----------  End 04 Home Jewellery  -----------//
+
+
+
